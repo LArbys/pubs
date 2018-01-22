@@ -57,7 +57,7 @@ fi
 export PUB_LOGGER_DRAIN=kLOGGER_COUT
 #export PUB_LOGGER_DRAIN=kLOGGER_FILE
 #export PUB_LOGGER_FILE_LOCATION=$PUB_TOP_DIR/log
-export PUB_LOGGER_FILE_LOCATION=/cluster/kappa/90-days-archive/wongjiradlab/larbys/publog
+export PUB_LOGGER_FILE_LOCATION=/cluster/kappa/90-days-archive/wongjiradlab/larbys/testpublog
 
 #
 # Daemon configuration
