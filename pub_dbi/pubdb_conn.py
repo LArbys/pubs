@@ -89,6 +89,14 @@ class pubdb_conn(object):
 
         if conn_index >= 0 and cls.is_connected(conn_info):
             return conn_index
+        
+        # output on debug
+        cls.debug( "PUBDB_CONN: db configuration" )
+        cls.debug( "host: {}".format(conn_info._host) )
+        cls.debug( "port: {}".format(conn_info._port) )
+        cls.debug( "db: {}".format(conn_info._db) )
+        cls.debug( "user: {}".format(conn_info._user) )
+        #print "passwd",conn_info._passwd # seems like a bad idea
 
         now_str  = time.strftime('%Y-%m-%d %H:%M:%S')
         try:
